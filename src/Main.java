@@ -20,8 +20,9 @@ public class Main {
         im.Execute(Actions.execute);
         im.Here(Place.here);
         king.getAdditions("Но, кажется, ");
-        king.Help(Actions.help_to_cope, shlyapa);
-        shlyapa.getConditions("с волнением:");
+        king.Help(Actions.help);
+        shlyapa.poor(Adjectives.poor);
+        shlyapa.getConditions(" с волнением:");
         he.Cont(Actions.cont);
         he.Shuffle(Actions.shuffle);
         he.getConditions("опасливо ");
@@ -31,8 +32,5 @@ public class Main {
         he.getAdditions("даже");
         cup.Decent(Adjectives.decent);
         cup.Cut(Actions.cut, sandwich);
-
-        // про бедного шляпу доделать хз как справишься думаю
-
     }
 }

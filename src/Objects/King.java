@@ -20,11 +20,11 @@ public class King extends Entity implements Additions
             System.out.print(",- Сказал " + name + ",- ");
         }
     }
-    public void Help(Actions act, Entity o)
+    public void Help(Actions act)
     {
-        if (act == Actions.help_to_cope)
+        if (act == Actions.help)
         {
-            System.out.print("слова " + super.name + " не очень помогли " + o + " справиться ");
+            System.out.print("слова " + super.name + " не очень помогли ");
         }
     }
 

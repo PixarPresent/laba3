@@ -1,6 +1,7 @@
 package Objects;
 
 
+import Enums.Adjectives;
 import Interfaces.Conditions;
 
 public class Shlyapa extends Entity implements Conditions {
@@ -13,6 +14,13 @@ public class Shlyapa extends Entity implements Conditions {
         this.name = name;
     }
 
+    public void poor(Adjectives adj)
+    {
+        if (adj == Adjectives.poor)
+        {
+            System.out.print("бедному " + name);
+        }
+    }
     @Override
     public void getConditions(String cond)
     {
